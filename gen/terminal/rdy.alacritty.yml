@@ -1,0 +1,53 @@
+colors:
+  primary:
+    background:        '#003340'
+    dim_foreground:    '#8099a5'
+    foreground:        '#a2afb6'
+    bright_foreground: '#e4ddd9'
+  dim:
+    black:             '#002833'
+    red:               '#f85ba8'
+    green:             '#28ac28'
+    yellow:            '#bb8e29'
+    blue:              '#3399f6'
+    magenta:           '#ac7df6'
+    cyan:              '#2ca5a2'
+    white:             '#8099a5'
+  normal:
+    black:             '#003340'
+    red:               '#f85ba8'
+    green:             '#28ac28'
+    yellow:            '#bb8e29'
+    blue:              '#3399f6'
+    magenta:           '#ac7df6'
+    cyan:              '#2ca5a2'
+    white:             '#a2afb6'
+  bright:
+    black:             '#8099a5'
+    red:               '#f85ba8'
+    green:             '#28ac28'
+    yellow:            '#bb8e29'
+    blue:              '#3399f6'
+    magenta:           '#ac7df6'
+    cyan:              '#2ca5a2'
+    white:             '#e4ddd9'
+  cursor:
+    text:              '#003340'
+    cursor:            '#e4ddd9'
+  search:
+    matches:
+      foreground:      '#003340'
+      background:      '#d9a531'
+    focused_match:
+      foreground:      '#003340'
+      background:      '#f96829'
+  hints:
+    start:
+      foreground:      '#002833'
+      background:      '#f84770'
+    end:
+      foreground:      '#f84770'
+      background:      '#002833'
+  selection:
+    text:              '#003340'
+    background:        '#8099a5'

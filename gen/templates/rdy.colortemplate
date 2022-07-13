@@ -1,0 +1,322 @@
+colortemplate options: source_comment=0 timestamp=0
+
+full name:  rdy
+short name: rdy
+author:     haystackandroid
+website:    github.com/haystackandroid/vim-rdy
+license:    bsd-2-clause-patent
+neovim:     yes
+
+background: any
+variant:    gui 256
+
+color: LOWL #002833 234
+color: BACK #003340 236
+color: HIGH #023846 237
+color: VSEL #728f9c  67
+color: MUTE #8099a5 247
+color: TEXT #a2afb6 145
+color: CRSR #e4ddd9 254
+color: DRED #f84770 204
+color: MGNT #f85ba8 205
+color: ORNG #f96829 208
+color: YLLW #bb8e29 178
+color: GREN #28ac28  70
+color: CYAN #2ca5a2  37
+color: BLUE #3399f6  39
+color: PRPL #ac7df6 141
+color: LYLW #d9a531 178
+
+term colors: BACK MGNT GREN YLLW BLUE PRPL CYAN TEXT
+term colors: BACK MGNT GREN YLLW BLUE PRPL CYAN TEXT
+
+ModeMsg          TEXT BACK
+Normal           TEXT BACK
+Terminal         TEXT BACK
+
+Conceal          none none bold
+Title            none none bold
+
+Underlined       none none underline
+
+ColorColumn      none HIGH
+Pmenu            none HIGH
+
+StatusLineNC     none HIGH underline
+StatusLineTermNC none HIGH underline
+TabLine          none HIGH underline
+TabLineFill      none HIGH underline
+WildMenu         none HIGH underline
+
+EndOfBuffer      MUTE none
+LineNr           MUTE none
+SignColumn       MUTE none
+
+FoldColumn       MUTE none bold
+Folded           MUTE none bold
+SpecialKey       MUTE none bold
+
+CursorColumn     none LOWL
+CursorLine       none LOWL
+CursorLineFold   none LOWL
+CursorLineSign   none LOWL
+
+CursorLineNr     MUTE LOWL
+
+VisualNOS        VSEL LOWL
+
+Visual           VSEL LOWL reverse
+
+PmenuSel         TEXT LOWL reverse
+StatusLine       TEXT LOWL reverse
+StatusLineTerm   TEXT LOWL reverse
+TabLineSel       TEXT LOWL reverse
+ToolbarButton    TEXT LOWL reverse
+
+Cursor           CRSR LOWL reverse
+
+VertSplit        LOWL LOWL
+
+PmenuSbar        HIGH HIGH
+
+PmenuThumb       TEXT TEXT
+ToolbarLine      TEXT TEXT
+
+StorageClass     MGNT none
+Structure        MGNT none
+Type             MGNT none
+Typedef          MGNT none
+
+Conditional      ORNG none
+Exception        ORNG none
+Keyword          ORNG none
+Label            ORNG none
+Operator         ORNG none
+Repeat           ORNG none
+Statement        ORNG none
+
+CurSearch        ORNG LOWL reverse
+IncSearch        ORNG LOWL reverse
+
+Function         YLLW none
+Identifier       YLLW none
+
+DiffChange       YLLW LOWL reverse
+DiffChanged      YLLW LOWL reverse
+
+Debug            GREN none
+Delimiter        GREN none
+Special          GREN none
+SpecialChar      GREN none
+Tag              GREN none
+
+DiffAdd          GREN LOWL reverse
+DiffAdded        GREN LOWL reverse
+MoreMsg          GREN LOWL reverse
+Question         GREN LOWL reverse
+
+Boolean          CYAN none
+Character        CYAN none
+Constant         CYAN none
+Float            CYAN none
+Number           CYAN none
+String           CYAN none
+
+MatchParen       CYAN LOWL reverse
+
+Define           BLUE none
+Include          BLUE none
+Macro            BLUE none
+PreCondit        BLUE none
+PreProc          BLUE none
+
+Directory        BLUE none bold
+
+DiffText         BLUE LOWL reverse
+
+Comment          PRPL none
+SpecialComment   PRPL none
+
+NonText          PRPL none bold
+
+Todo             PRPL LOWL reverse
+WarningMsg       PRPL LOWL reverse
+
+DiffDelete       DRED LOWL reverse
+DiffRemoved      DRED LOWL reverse
+Error            DRED LOWL reverse
+ErrorMsg         DRED LOWL reverse
+
+QuickFixLine     LYLW LOWL reverse
+Search           LYLW LOWL reverse
+
+SpellBad         none none g=undercurl s=MGNT t=undercurl
+SpellCap         none none g=undercurl s=BLUE t=undercurl
+SpellLocal       none none g=undercurl s=CYAN t=undercurl
+SpellRare        none none g=undercurl s=PRPL t=undercurl
+
+; ------------------------------------------------------------------------------
+
+auxfile terminal/rdy.Xresources
+*background:  @guiBACK
+*foreground:  @guiTEXT
+*cursorColor: @guiCRSR
+*color0:      @guiBACK
+*color8:      @guiBACK
+*color1:      @guiMGNT
+*color9:      @guiMGNT
+*color2:      @guiGREN
+*color10:     @guiGREN
+*color3:      @guiYLLW
+*color11:     @guiYLLW
+*color4:      @guiBLUE
+*color12:     @guiBLUE
+*color6:      @guiCYAN
+*color14:     @guiCYAN
+*color5:      @guiPRPL
+*color13:     @guiPRPL
+*color7:      @guiTEXT
+*color15:     @guiTEXT
+endauxfile
+
+; ------------------------------------------------------------------------------
+
+auxfile terminal/rdy.alacritty.yml
+colors:
+  primary:
+    background:        '@guiBACK'
+    dim_foreground:    '@guiMUTE'
+    foreground:        '@guiTEXT'
+    bright_foreground: '@guiCRSR'
+  dim:
+    black:             '@guiLOWL'
+    red:               '@guiMGNT'
+    green:             '@guiGREN'
+    yellow:            '@guiYLLW'
+    blue:              '@guiBLUE'
+    magenta:           '@guiPRPL'
+    cyan:              '@guiCYAN'
+    white:             '@guiMUTE'
+  normal:
+    black:             '@guiBACK'
+    red:               '@guiMGNT'
+    green:             '@guiGREN'
+    yellow:            '@guiYLLW'
+    blue:              '@guiBLUE'
+    magenta:           '@guiPRPL'
+    cyan:              '@guiCYAN'
+    white:             '@guiTEXT'
+  bright:
+    black:             '@guiMUTE'
+    red:               '@guiMGNT'
+    green:             '@guiGREN'
+    yellow:            '@guiYLLW'
+    blue:              '@guiBLUE'
+    magenta:           '@guiPRPL'
+    cyan:              '@guiCYAN'
+    white:             '@guiCRSR'
+  cursor:
+    text:              '@guiBACK'
+    cursor:            '@guiCRSR'
+  search:
+    matches:
+      foreground:      '@guiBACK'
+      background:      '@guiLYLW'
+    focused_match:
+      foreground:      '@guiBACK'
+      background:      '@guiORNG'
+  hints:
+    start:
+      foreground:      '@guiLOWL'
+      background:      '@guiDRED'
+    end:
+      foreground:      '@guiDRED'
+      background:      '@guiLOWL'
+  selection:
+    text:              '@guiBACK'
+    background:        '@guiMUTE'
+endauxfile
+
+; ------------------------------------------------------------------------------
+
+auxfile autoload/airline/themes/rdy.vim
+let g:airline#themes#rdy#palette = {}
+
+let s:LOWL = ['@guiLOWL', @term256LOWL]
+let s:HIGH = ['@guiHIGH', @term256HIGH]
+let s:TEXT = ['@guiTEXT', @term256TEXT]
+let s:DRED = ['@guiDRED', @term256DRED]
+let s:GREN = ['@guiGREN', @term256GREN]
+let s:BLUE = ['@guiBLUE', @term256BLUE]
+
+let s:nrm1 = [s:LOWL[0], s:TEXT[0], s:LOWL[1], s:TEXT[1]]
+let s:nrm2 = [s:TEXT[0], s:HIGH[0], s:TEXT[1], s:HIGH[1]]
+let s:insr = [s:LOWL[0], s:GREN[0], s:LOWL[1], s:GREN[1]]
+let s:visl = [s:LOWL[0], s:BLUE[0], s:LOWL[1], s:BLUE[1]]
+let s:rplc = [s:LOWL[0], s:DRED[0], s:LOWL[1], s:DRED[1]]
+let s:inac = [s:TEXT[0], s:HIGH[0], s:TEXT[1], s:HIGH[1]]
+
+let g:airline#themes#rdy#palette.normal =
+  \ airline#themes#generate_color_map(s:nrm1 , s:nrm2 , s:nrm2)
+
+let g:airline#themes#rdy#palette.insert =
+  \ airline#themes#generate_color_map(s:insr , s:nrm2 , s:nrm2)
+
+let g:airline#themes#rdy#palette.visual =
+  \ airline#themes#generate_color_map(s:visl , s:nrm2 , s:nrm2)
+
+let g:airline#themes#rdy#palette.replace =
+  \ airline#themes#generate_color_map(s:rplc , s:nrm2 , s:nrm2)
+
+let g:airline#themes#rdy#palette.inactive =
+  \ airline#themes#generate_color_map(s:inac , s:inac , s:inac)
+
+if !get(g:, 'loaded_ctrlp', 0)
+  finish
+endif
+
+let g:airline#themes#rdy#palette.ctrlp =
+  \ airline#extensions#ctrlp#generate_color_map(s:nrm2, s:nrm1, s:nrm2 )
+endauxfile
+
+; ------------------------------------------------------------------------------
+
+auxfile autoload/lightline/colorscheme/rdy.vim
+let s:LOWL = ['@guiLOWL', @term256LOWL]
+let s:HIGH = ['@guiHIGH', @term256HIGH]
+let s:TEXT = ['@guiTEXT', @term256TEXT]
+let s:DRED = ['@guiDRED', @term256DRED]
+let s:ORNG = ['@guiORNG', @term256ORNG]
+let s:GREN = ['@guiGREN', @term256GREN]
+let s:BLUE = ['@guiBLUE', @term256BLUE]
+let s:PRPL = ['@guiPRPL', @term256PRPL]
+
+let s:p = { 'normal' : {} , 'inactive': {} , 'insert'  : {} ,
+          \ 'replace': {} , 'visual'  : {} , 'tabline' : {} }
+
+let s:p.normal.left     = [[s:LOWL, s:TEXT], [s:LOWL, s:TEXT]]
+let s:p.normal.middle   = [[s:TEXT, s:HIGH]]
+let s:p.normal.right    = [[s:LOWL, s:TEXT], [s:LOWL, s:TEXT]]
+
+let s:p.inactive.left   = copy(s:p.normal.middle)
+let s:p.inactive.middle = copy(s:p.normal.middle)
+let s:p.inactive.right  = copy(s:p.normal.middle)
+
+let s:p.insert.left     = [[s:LOWL, s:GREN], [s:LOWL, s:GREN]]
+let s:p.insert.right    = [[s:LOWL, s:GREN], [s:LOWL, s:GREN]]
+
+let s:p.visual.left     = [[s:LOWL, s:BLUE], [s:LOWL, s:BLUE]]
+let s:p.visual.right    = [[s:LOWL, s:BLUE], [s:LOWL, s:BLUE]]
+
+let s:p.replace.left    = [[s:LOWL, s:DRED ], [s:LOWL, s:DRED ]]
+let s:p.replace.right   = [[s:LOWL, s:DRED ], [s:LOWL, s:DRED ]]
+
+let s:p.tabline.left    = copy(s:p.normal.middle)
+let s:p.tabline.tabsel  = [[s:LOWL, s:TEXT]]
+let s:p.tabline.right   = copy(s:p.normal.middle)
+
+let s:p.normal.error    = [[s:DRED, s:LOWL]]
+let s:p.normal.warning  = [[s:PRPL, s:LOWL]]
+
+let g:lightline#colorscheme#rdy#palette = lightline#colorscheme#flatten(s:p)
+endauxfile
